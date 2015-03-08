@@ -20,27 +20,64 @@ public class Problem5 {
 
         int dataCount = Integer.parseInt(reader.readLine());
 
-        while((line = reader.readLine()) != null) {
+        for(int i=0; i<dataCount; i++) {
+            line = reader.readLine();
             System.out.println(findNextPalindrome(line));
         }
     }
 
-    private int findNextPalindrome(String text) {
-        int pal = Integer.parseInt(text);
-        pal = pal + 1;
-        while(!isPalindrome(Integer.toString(pal))) {
-            pal = pal + 1;
+    private String findNextPalindrome(String text) {
+        String pal = inc(text);
+        while(!isPalindrome(pal)) {
+            pal = inc(pal);
         }
 
         return pal;
     }
 
     private boolean isPalindrome(String text) {
+        System.out.println("isP " + text);
         for(int i=0; i<text.length(); i++) {
             if(text.charAt(i) != text.charAt(text.length() - 1 - i)) {
                 return false;
             }
         }
         return true;
+    }
+
+    private String inc(String argA) {
+        return add(argA, "1");
+    }
+
+    private String add(String argA, String argB) {
+        int memory=0;
+        int partialSum;
+        int bLen = argB.length();
+
+        String fullAddition = "";
+        for(int i=0; i< argA.length(); i++) {
+            char a = argA.charAt(argA.length() - i - 1);
+            char b;
+            if(bLen - i - 1 >= 0) {
+                b = argB.charAt(argB.length() - i - 1);
+            } else {
+                b = '0';
+            }
+
+            partialSum = ((int)a - 48) + ((int)b - 48) + memory;
+            memory = 0;
+            if(partialSum >= 10) {
+                fullAddition = (partialSum-10) + fullAddition;
+                memory = 1;
+            } else {
+                fullAddition = partialSum + fullAddition;
+            }
+
+        }
+        if(memory == 1) {
+            fullAddition = '1' + fullAddition;
+        }
+
+        return fullAddition;
     }
 }
