@@ -143,13 +143,9 @@ public class Problem5 {
     }
 
     private String reverseString(String string) {
-        StringBuffer buffer = new StringBuffer("");
+        StringBuffer buffer = new StringBuffer(string);
 
-        for(int i=0; i<string.length(); i++) {
-            buffer.append(string.charAt(string.length() - i - 1));
-        }
-
-        return buffer.toString();
+        return buffer.reverse().toString();
     }
 
     private String inc(String argA) {
