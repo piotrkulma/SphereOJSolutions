@@ -10,7 +10,7 @@ import java.io.IOException;
 public class Runner {
     public static String DATA_FILE_NAME = "Problem6.txt";
 
-    public static void main(String... args) throws IOException {
+    public static void main(String... args) throws Exception {
 
         System.setIn(Runner.class.getClassLoader().getResourceAsStream(DATA_FILE_NAME));
         Problem6.main(null);
