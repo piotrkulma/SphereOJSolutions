@@ -1,4 +1,4 @@
-package peter.sphereoj.solutions;
+package peter.sphereoj.solutions.solved;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,10 +7,12 @@ import java.io.InputStreamReader;
 
 /**
  * Created by Piotr Kulma on 08.03.15.
+ *
+ * Status: done
  */
-public class ADDREV {
+public class Problem42 {
     public static void main(String[] args) throws IOException {
-        new ADDREV().runSolution();
+        new Problem42().runSolution();
     }
 
     private void runSolution() throws IOException {

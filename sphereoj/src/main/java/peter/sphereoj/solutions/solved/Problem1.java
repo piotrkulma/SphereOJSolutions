@@ -1,4 +1,4 @@
-package peter.sphereoj.solutions;
+package peter.sphereoj.solutions.solved;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,6 +7,8 @@ import java.io.InputStreamReader;
 
 /**
  * Created by Piotr Kulma on 26.02.15.
+ *
+ * Status: done
  */
 public class Problem1 {
     public static void main(String[] args) throws IOException {

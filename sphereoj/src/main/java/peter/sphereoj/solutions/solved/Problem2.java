@@ -1,4 +1,4 @@
-package peter.sphereoj.solutions;
+package peter.sphereoj.solutions.solved;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
@@ -6,6 +6,8 @@ import java.io.InputStreamReader;
 
 /**
  * Created by Piotr Kulma on 26.02.15.
+ *
+ * Status: done
  */
 public class Problem2 {
     private final static int ARRAY_SIZE = 31634;

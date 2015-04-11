@@ -1,4 +1,4 @@
-package peter.sphereoj.solutions;
+package peter.sphereoj.solutions.in_progress;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,6 +7,8 @@ import java.io.InputStreamReader;
 
 /**
  * Created by Piotr Kulma on 08.03.15.
+ *
+ * Status: in progress
  */
 public class Problem6 {
     private final String NEXT_LINE = "\r\n";
