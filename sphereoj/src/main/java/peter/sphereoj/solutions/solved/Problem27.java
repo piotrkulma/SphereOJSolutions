@@ -1,4 +1,4 @@
-package peter.sphereoj.solutions.in_progress;
+package peter.sphereoj.solutions.solved;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,7 +11,7 @@ import java.util.TreeMap;
 /**
  * Created by Piotr Kulma on 11.04.15.
  *
- * Status: in progress
+ * Status: solved
  */
 public class Problem27 {
     public static final String STRING_NEW_LINE  = "\r\n";
